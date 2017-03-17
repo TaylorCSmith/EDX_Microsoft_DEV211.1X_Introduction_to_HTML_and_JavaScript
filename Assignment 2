@@ -1,0 +1,84 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace ConsoleApp2
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            for (int height = 0; height < 8; height++)
+            {
+                if (height == 0 || height == 2 || height == 4 || height == 6)
+                {
+                    for (int width = 0; width <8; width++)
+                    {
+                        switch (width)
+                        {
+                            case 0:
+                                Console.Write("X");
+                                break;
+                            case 1:
+                                Console.Write("O");
+                                break;
+                            case 2:
+                                Console.Write("X");
+                                break;
+                            case 3:
+                                Console.Write("O");
+                                break;
+                            case 4:
+                                Console.Write("X");
+                                break;
+                            case 5:
+                                Console.Write("O");
+                                break;
+                            case 6:
+                                Console.Write("X");
+                                break;
+                            case 7:
+                                Console.WriteLine("O");
+                                break;
+                        }
+                    }
+                }
+                else
+                {
+                    for (int width = 0; width < 8; width++)
+                    {
+                        switch (width)
+                        {
+                            case 0:
+                                Console.Write("O");
+                                break;
+                            case 1:
+                                Console.Write("X");
+                                break;
+                            case 2:
+                                Console.Write("O");
+                                break;
+                            case 3:
+                                Console.Write("X");
+                                break;
+                            case 4:
+                                Console.Write("O");
+                                break;
+                            case 5:
+                                Console.Write("X");
+                                break;
+                            case 6:
+                                Console.Write("O");
+                                break;
+                            case 7:
+                                Console.WriteLine("X");
+                                break;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
