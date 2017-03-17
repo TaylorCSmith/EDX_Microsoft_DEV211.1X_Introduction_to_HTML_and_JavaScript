@@ -1,0 +1,46 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace ConsoleApp1
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            string firstName;
+            string lastName;
+            DateTime birthdate;
+            string addressLine1;
+            string addressLine2;
+            string city;
+            string stateProvince;
+            int zipPostalCode;
+            string country;
+
+            firstName = "Johnny";
+            lastName = "Appleseed";
+            birthdate = new DateTime(1774, 09, 26);
+            addressLine1 = "3243 Apple Street";
+            addressLine2 = "Floor 1";
+            city = "Leominster";
+            stateProvince = "Massachusetts";
+            zipPostalCode = 32432;
+            country = "British America";
+
+            Console.WriteLine(firstName);
+            Console.WriteLine(lastName);
+            Console.WriteLine(birthdate);
+            Console.WriteLine(addressLine1);
+            Console.WriteLine(addressLine2);
+            Console.WriteLine(city);
+            Console.WriteLine(stateProvince);
+            Console.WriteLine(zipPostalCode);
+            Console.WriteLine(country);
+
+            
+        }
+    }
+}
