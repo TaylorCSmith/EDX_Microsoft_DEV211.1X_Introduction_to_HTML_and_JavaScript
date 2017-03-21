@@ -1,4 +1,3 @@
-// Incomplete
 // Module 3 Assignment
 
 using System;
@@ -13,9 +12,22 @@ namespace ConsoleApp4
     {
         static void Main(string[] args)
         {
+
+            try
+            {
+                ValidateBirthDate("asdfa");
+            }
+
+            catch (NotImplementedException e)
+            {
+                Console.WriteLine("I caught the exception");
+                Console.WriteLine(e);
+            }
+
             Console.Write("Enter the following letters to choose which category to fill information into (S)tudent, (T)eacher, (U)Program, (D)egree, (C)ourse: ");
             string category = Console.ReadLine();
             string firstName, lastName, birthdate, addressLine1, addressLine2, city, stateProvince, country;
+            birthdate = "april";
             int zipPostal;
 
             switch (category)
@@ -52,7 +64,6 @@ namespace ConsoleApp4
                     PrintCourseInformation(courseName, credits, durationInWeeks, teacher, category);
                     break;
             }
-                  
         }
 
         static void GetPersonsInformation(out string firstName, out string lastName, out string birthdate, out string addressLine1, out string addressLine2, out string city, out string stateProvince, out int zipPostal, out string country, string category)
@@ -126,6 +137,11 @@ namespace ConsoleApp4
         static void PrintCourseInformation(string courseName, int credits, int durationInWeeks, string teacher, string category)
         {
             Console.WriteLine("The {0} name is {1} and is worth {2} credits. It lasts {3} weeks and is taught by {4}", category, courseName, credits, durationInWeeks, teacher);
+        }
+
+        static void ValidateBirthDate(string birthdate)
+        {
+            throw new System.NotImplementedException();
         }
     }
 }
