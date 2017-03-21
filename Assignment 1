@@ -1,3 +1,15 @@
+// Instructions
+// 1.  Create a C# Console application.
+// 2.  Within the Main() method in this application, create variables of the correct data type for the information 
+// related to a student only.  The other information will be used in later modules when you create class files for 
+// the other objects listed:
+// 3.  Once you have the variables created, use assignment statements to assign values to one set of student variables 
+// and use the Console.WriteLine() method to output the values to the console window.
+
+// Again, this assignment is merely intended to check your understanding of how to create variables, assign values to 
+// them, and output the information to a console window.  You will build on these concepts and begin to create more 
+// functionality in later modules.
+
 using System;
 using System.Collections.Generic;
 using System.Linq;
