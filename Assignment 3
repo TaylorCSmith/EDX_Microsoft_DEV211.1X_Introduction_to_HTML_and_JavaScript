@@ -1,4 +1,26 @@
-// Module 3 Assignment
+// Instructions
+/*
+This assignment requires you to create some methods for getting data for your variables and sending that data to the console window.
+
+In the assignment, you are to practice getting values from a user and assigning the to local variables.  As a result, move the 
+variables into the appropriate methods.  For example, you could create a method called GetStudentInformation() and in that method, 
+you could prompt the user for each piece of student information and then assign it to the variables you created.
+
+Next, create methods such as PrintStudentDetails(string first, string last, string birthday) that accepts the proper variables, 
+and use an appropriate message to print the content to the console window.
+
+The first example is a guide for you, the rest you will need to create on your own.
+
+Create a method that prompts a user of your console application to input the information for a student:
+
+1. Using the above partial code sample, complete the method for getting student data.
+2. Create a method to get information for a teacher, a course, a uprogram, and a degree using a similar method as above.
+3. Create methods to print the information to the screen for each object such as static void PrintStudentDetails(...).
+4. From within Main(), call each of the methods to prompt for input from a user of your application.
+5. Just enter enough information to show you understand how to use methods.  (At least three attributes each).
+6. Assign the values that are input, to the proper variables.
+7. Output the values of each object using the "print" methods that you created.
+*/
 
 using System;
 using System.Collections.Generic;
