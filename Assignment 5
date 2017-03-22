@@ -1,0 +1,79 @@
+/*
+Instructions
+
+In this assignment, you need to convert your objects for the application into class files.   Create a class file for:
+A Student
+A Teacher
+A UProgram (C# uses Program as the name of the class that contains Main() so we must use a different class name here)
+A Degree
+A Course
+Transfer the variables you created in Module 1 into these class files.  Ensure that you encapsulate your member variables 
+in the class files using properties.
+
+The Course object should contain an array of Student objects so ensure that you create an array inside the Course object 
+to hold Students as well as an array to contain Teacher objects as each course may have more than one teacher or TAs.  For 
+this assignment, create arrays of size 3 for students and the same for teachers.  The UProgram object should be able to 
+contain degrees and the degrees should be able to contain courses as well but for the purposes of this assignment, just 
+ensure you have a single variable in UProgram to hold a Degree and single variable in Degree to hold a Course.  
+
+Add a static class variable to the Student class to track the number of students currently enrolled in a school. 
+Increment a student object count every time a Student is created.
+
+In the Main() method of Program.cs:
+
+Instantiate three Student objects.
+Instantiate a Course object called Programming with C#.
+Add your three students to this Course object.
+Instantiate at least one Teacher object.
+Add that Teacher object to your Course object
+Instantiate a Degree object, such as Bachelor.
+Add your Course object to the Degree object.
+Instantiate a UProgram object called Information Technology.
+Add the Degree object to the UProgram object.
+Using Console.WriteLine statements, output the following information to the console window:
+The name of the program and the degree it contains
+The name of the course in the degree
+The count of the number of students in the course.
+/*
+
+
+
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace Assignment5
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+
+            Student student1 = new Student("Johnny", "appleseed", "a1", "a2", "city", "state", "country", new DateTime(02 / 12 / 1232), 23432);
+            Student student2 = new Student("Johnny", "appleseed", "a1", "a2", "city", "state", "country", new DateTime(02 / 12 / 1232), 23432);
+            Student student3 = new Student("Johnny", "appleseed", "a1", "a2", "city", "state", "country", new DateTime(02 / 12 / 1232), 23432);
+
+            Course course1 = new Course("Programmin with C#");
+            course1.SetStudentInformation(student1);
+            course1.SetStudentInformation(student2);
+            course1.SetStudentInformation(student3);
+
+            Teacher teacher1 = new Teacher("Johnny", "appleseed", "a1", "a2", "city", "state", "country", new DateTime(02 / 12 / 1232), 23432);
+
+            course1.SetTeacherInformation(teacher1);
+
+            Degree degree1 = new Degree("Bachelor of Science", course1);
+
+            UProgram program1 = new UProgram("Information Technology", degree1);
+
+            Console.WriteLine("The {0} program contains the {1} degree", program1.Name, program1.Degree1.Name);
+            Console.WriteLine(" ");
+            Console.WriteLine("The {0} degree contains the course {1}", program1.Degree1.Name, program1.Degree1.Course1.CourseName);
+            Console.WriteLine(" ");
+            Console.WriteLine("The {0} course contains {1} students", program1.Degree1.Course1.CourseName, program1.Degree1.Course1.StudentArray[0].getCounter());
+
+        }
+    }
+}
