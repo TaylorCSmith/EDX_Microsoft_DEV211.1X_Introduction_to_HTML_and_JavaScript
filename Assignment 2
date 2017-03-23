@@ -29,12 +29,20 @@ namespace ConsoleApp2
     {
         static void Main(string[] args)
         {
+        
+        // first for loop creates a new variable called height which will be used to determine which row is currently
+        // being filled in with "X" and "O" and stops it when it reaches the desired amount of rows
             for (int height = 0; height < 8; height++)
             {
+            // the if statement is used to change between even or odd "height" values
+            // the if is for even height values
                 if (height == 0 || height == 2 || height == 4 || height == 6)
                 {
+            // the following for loop creates a new variable called width and is used to determine how far along the program is
+            // when it is filling in X or O
                     for (int width = 0; width <8; width++)
                     {
+            // the switch statement is used to fill in a single X or O depending on the value of width
                         switch (width)
                         {
                             case 0:
@@ -64,6 +72,7 @@ namespace ConsoleApp2
                         }
                     }
                 }
+          // the following else is used in a similar fashion as the "if" above but is for all odd values of height
                 else
                 {
                     for (int width = 0; width < 8; width++)
