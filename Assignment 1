@@ -22,6 +22,7 @@ namespace ConsoleApp1
     {
         static void Main(string[] args)
         {
+        // initialize variables 
             string firstName;
             string lastName;
             DateTime birthdate;
@@ -31,7 +32,8 @@ namespace ConsoleApp1
             string stateProvince;
             int zipPostalCode;
             string country;
-
+            
+        // values assigned to variables
             firstName = "Johnny";
             lastName = "Appleseed";
             birthdate = new DateTime(1774, 09, 26);
@@ -42,6 +44,7 @@ namespace ConsoleApp1
             zipPostalCode = 32432;
             country = "British America";
 
+        // output the values of the variables using Console.WriteLine("..."); 
             Console.WriteLine(firstName);
             Console.WriteLine(lastName);
             Console.WriteLine(birthdate);
@@ -51,8 +54,6 @@ namespace ConsoleApp1
             Console.WriteLine(stateProvince);
             Console.WriteLine(zipPostalCode);
             Console.WriteLine(country);
-
-            
         }
     }
 }
